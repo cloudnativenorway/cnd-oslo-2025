@@ -1,0 +1,11 @@
+# Hugo stuff
+website/public/
+website/resources/_gen/
+website/assets/jsconfig.json
+website/hugo_stats.json
+
+website/hugo.exe
+website/hugo.darwin
+website/hugo.linux
+
+website/.hugo_build.lock
