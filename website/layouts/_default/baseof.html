@@ -7,10 +7,11 @@
     {{ with resources.Get "css/style.css" }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="screen">
     {{ end }}
+    <link rel="shortcut icon" href="/img/oslo_logo.png" type="image/x-icon">
     
 </head>
 <body>
-    {{ partial "nav.html" }}
+    {{ partial "header.html" }}
     {{ block "main" . }}
     {{ end }}
 </body>
