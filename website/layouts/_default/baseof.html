@@ -7,8 +7,9 @@
     {{ with resources.Get "css/style.css" }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="screen">
     {{ end }}
-    <link rel="shortcut icon" href="img/oslo_logo.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="https://punkt-cdn.oslo.kommune.no/latest/logos/32x32-favicon.png" type="image/x-icon">
+    <meta http-equiv="Content-Security-Policy" content="Content-Security-Policy: default-src 'self'; img-src 'self' https://punkt-cdn.oslo.kommune.no">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()">
 </head>
 <body>
     {{ partial "header.html" }}
