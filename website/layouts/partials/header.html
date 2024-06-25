@@ -1,5 +1,7 @@
 <header>
-    <img src="img/k8soslo.png" class="navlogo" alt="logo">
+    {{ with resources.Get "img/k8soslo.png" }}
+        <img src="{{ .RelPermalink }}" class="navlogo" alt="logo">
+    {{ end }}
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
