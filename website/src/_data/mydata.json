@@ -1,12 +1,29 @@
 [
 {
-    "title": "James Midzi",
-    "description": "A site to showcase Eleventy features by building a site.",
-    "keywords": "eleventy, 11ty, css, ssg"
+    "title": "Really cool stuff",
+    "description": "Doesn't get much cooler than this.",
+    "keywords": "stuff, things"
   },
   {
-    "title": "Yolo",
-    "description": "description 2.",
-    "keywords": "eleventy"
+    "title": "Funky thang",
+    "description": "You know, stuff and things.",
+    "keywords": "things, thangs"
+  },
+  {
+    "title": "Funky thang",
+    "description": "You know, stuff and other things.",
+    "keywords": ""
+  }
+  ,
+  {
+    "title": "Another funky thang",
+    "description": "You know, stuff and different things.",
+    "keywords": "yolo"
+  }
+  ,
+  {
+    "title": "Yet one more funky thang",
+    "description": "You know, stuff and whatever.",
+    "keywords": "sup?"
   }
 ]
