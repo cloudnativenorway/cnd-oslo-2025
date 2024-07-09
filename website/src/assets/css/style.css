@@ -46,10 +46,6 @@ header {
     left: -9999px !important;
 }
 
-.nav-toggle:focus~.nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
-}
-
 .nav-toggle-label {
     position: absolute;
     top: 0;

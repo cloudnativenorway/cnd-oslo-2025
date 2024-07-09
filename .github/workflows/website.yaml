@@ -28,15 +28,19 @@ jobs:
       - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # ratchet:actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # ratchet:peaceiris/actions-hugo@v3
+     
+      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # ratchet:actions/setup-node@v4
         with:
-          hugo-version: '0.127.0'
-      - name: Build
-        run: hugo --minify
+          node-version: 20
+          cache: 'npm'
+     
+      - run: npm ci
+     
+      - run: npm run build
+     
       - name: Deploy
         uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # ratchet:peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/public
+          publish_dir: ./website/_site
