@@ -6,27 +6,36 @@
     <title>KCD - Program</title>
     <link rel="stylesheet" href="/kcd-oslo-2025/assets/css/style.css">
     <link rel="shortcut icon" href="https://punkt-cdn.oslo.kommune.no/latest/logos/32x32-favicon.png" type="image/x-icon">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' https://punkt-cdn.oslo.kommune.no https://images.photowall.com; font-src 'self' https://fonts.gstatic.com; frame-src 'none'; frame-ancestors 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' https://punkt-cdn.oslo.kommune.no; font-src 'self' https://fonts.gstatic.com; frame-src 'none'; frame-ancestors 'none'; form-action 'none'">
     <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()">
 </head>
 <body>
     <header>
-    <a href="/kcd-oslo-2025/">
-        <img src="/kcd-oslo-2025/assets/images/oslo_logo.png" class="navlogo" alt="logo">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="/kcd-oslo-2025/">Home</a></li>
+  <img src="/kcd-oslo-2025/assets/images/oslo_logo.png" class="navlogo">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="/kcd-oslo-2025/">Home</a></li>
         <li><a href="/kcd-oslo-2025/program">Program</a></li>
         <li><a href="/kcd-oslo-2025/venue">Venue</a></li>
         <li><a href="/kcd-oslo-2025/about">About</a></li>
-      </ul>
-    </nav>
-  </header>
-    <ul>
-<p><li>James Midzi - A site to showcase Eleventy features by building a site.</li></p>
-<p><li>Yolo - description 2.</li></p>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+    <div class="content">
+        <h1>Program</h1>
+<p>Stuff loaded from json file</p>
+<ul>
+<p><li>Really cool stuff - Doesn't get much cooler than this.</li></p>
+<p><li>Funky thang - You know, stuff and things.</li></p>
+<p><li>Funky thang - You know, stuff and other things.</li></p>
+<p><li>Another funky thang - You know, stuff and different things.</li></p>
+<p><li>Yet one more funky thang - You know, stuff and whatever.</li></p>
 </ul>
 
+    </div>
 </body>
 </html>
