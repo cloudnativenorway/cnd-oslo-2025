@@ -38,7 +38,7 @@ jobs:
      
       - run: npm ci
      
-      - run: npm run build -- --pathprefix "/kcd-oslo-2025/"
+      - run: npm run build -- --pathprefix "/cnd-oslo-2025/"
      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # ratchet:peaceiris/actions-gh-pages@v3
